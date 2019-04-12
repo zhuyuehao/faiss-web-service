@@ -46,13 +46,15 @@ docker pull plippe/faiss-web-service:1.2.1-gpu
 
 由于提取图片特征向量时，需要用到Opencv，所以还需要在镜像中安装它。
 
+
 ## API 使用规则
 
 ### 构建索引
 
 启动docker 容器，进入容器中，运行：
 
-```bash
+```
+docker run --rm --detach --publish 5000:5000 plippe/faiss-web-service:1.2.1-cpu
 cd src/train_index
 python train_index.py
 ```
