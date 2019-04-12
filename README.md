@@ -55,6 +55,8 @@ docker pull plippe/faiss-web-service:1.2.1-gpu
 
 ```
 docker run --rm --detach --publish 5000:5000 plippe/faiss-web-service:1.2.1-cpu
+docker ps #显示正在运行容器
+docker exec -it containId bash #进入容器
 cd src/train_index
 python train_index.py
 ```
