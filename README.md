@@ -39,6 +39,8 @@
 可以到 [the docker hub image](https://hub.docker.com/r/plippe/faiss-web-service/) 下载基础镜像:
 
 ```sh
+docker pull plippe/faiss-web-service:1.2.1-cpu
+或
 docker pull plippe/faiss-web-service:1.2.1-gpu
 ```
 
